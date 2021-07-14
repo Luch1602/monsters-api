@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.1">
+<title>RickAndMorty </title>
+<link rel="stylesheet" href="./css/style.css" rel="stylesheet" type="text/css"/>
+
+<script src ="./js/dom-api.js" ></script>
+</head>
+<body onload ="load(next)">
+<h1 class= "titleStyle"> The Rick and Morty API  </h1>
+<div >
+ <fieldset class="sortby">
+    <legend>sorted by:</legend>
+    <select class="sortby" onchange="sortBy(this.value)">
+    <option value="0">default</option> 
+    <option value ='1'>first older</option><option value ='2'>first  younger</option><option value ='3'>by count of episodes</option></select>
+   
+    <button onclick="goLast()" id="bprev" style ="display: none" class="button-7 gr_r"> Prev </button>
+    </fieldset>
+
+</div>
+
+ <section id='card-container' >  </section>
+ <button onclick="goNext()" id="bnext" style ="display: none" class="button-7 gr_r"> Next </button>
+
+</body>
+</html>
